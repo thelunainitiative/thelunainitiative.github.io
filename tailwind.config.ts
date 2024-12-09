@@ -8,9 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '360px',
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xlg: '1280px',
+        xl: '1440px',
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'luna-blue': '#002147',
+        'luna-beige': '#e8dfd6'
       },
     },
   },

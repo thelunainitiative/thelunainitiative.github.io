@@ -7,6 +7,12 @@
   --foreground: #171717;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -14,8 +20,48 @@
   }
 }
 
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .no-space {
+    word-spacing: -3px;
+  }
+
+  /* horizontally center absolute positioned element, width has to be defined e.g: w-fit or w-2 */
+  .center-x-absolute {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  /* vertically center absolute positioned element, height has to be defined e.g: h-fit or h-2 */
+  .center-y-absolute {
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
