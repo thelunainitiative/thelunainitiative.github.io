@@ -2,6 +2,7 @@ import Image from "next/image";
 import WhiteLogo from "@/../public/images/white_logo.png";
 import { LunaButton } from "@/components/ui/Buttons";
 import Link from "next/link";
+import { routes } from "@/utilities/routes";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
           />
         </div>
         <div className="w-fit mt-10 mb-16">
-          <Link href="" className="w-fit">
+          <Link href={routes.product} className="w-fit">
             <LunaButton
               text="ABOUT US"
               className="text-luna-beige outline-luna-beige outline outline-2 py-1 px-6 rounded-sm font-bold text-xl"
@@ -54,10 +55,6 @@ export default function Home() {
             of access to menstrual products.
           </p>
         </div>
-      </section>
-      <section className="bg-luna-blue text-luna-beige p-5">
-        <h3 className="text-2xl font-bold my-4">Want to get in touch?</h3>
-        <p className="my-4">Email us at: thelunainitiative@gmail.com</p>
       </section>
     </div>
   );

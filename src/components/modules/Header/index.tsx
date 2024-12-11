@@ -4,14 +4,18 @@ import HamburgerMenu from "@/../public/images/hamburger-menu.svg";
 import BlackLogo from "@/../public/images/black_logo.png";
 import InstagramLogo from "@/../public/images/instagram_logo.png";
 import LinkedinLogo from "@/../public/images/linkedin_logo.png";
+import Link from "next/link";
+import { routes } from "@/utilities/routes";
 
 const Header: React.FC = () => (
   <header>
     <div className="bg-luna-beige min-h-16">
       <div className="flex py-4 justify-between items-center px-6">
-        <div>
-          <Image src={BlackLogo} alt="Luna black logo" height={50} />
-        </div>
+        <Link href={routes.home} replace>
+          <div>
+            <Image src={BlackLogo} alt="Luna black logo" height={50} />
+          </div>
+        </Link>
         <div className="flex h-fit justify-center items-center">
           <span className="mr-3">
             <HamburgerMenu />
