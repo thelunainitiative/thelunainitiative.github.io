@@ -6,9 +6,9 @@ export const TeamCard: React.FC<{
   name: string;
   position: string;
 }> = ({ imageSrc, name, position }) => (
-  <div className="flex flex-col items-center p-5 h-[369px] w-64 bg-luna-blue text-white rounded-lg text-center">
-    <Image src={imageSrc} width={213} alt="luna team" />
-    <p className="text-lg font-bold mt-5">{name}</p>
-    <p className="py-3">{position}</p>
+  <div className="flex flex-col items-center p-5 h-80 md:h-[369px] w-44 md:w-64 bg-luna-blue text-luna-beige rounded-lg text-center">
+    <Image className="w-[137px] md:w-[213px]" src={imageSrc} alt="luna team" />
+    <p className="text-lg font-bold mt-5 leading-tight">{name}</p>
+    <p className="py-3 leading-tight">{position}</p>
   </div>
 );

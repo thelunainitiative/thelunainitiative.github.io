@@ -4,10 +4,10 @@ import SchrodersTeam from "@/../public/images/schroders_team_pic.png";
 export default function FundraisingPage() {
   return (
     <div>
-      <section className="flex flex-col items-center px-72 pt-2 pb-10 bg-luna-beige">
-        <div className="text-luna-blue text-center">
+      <section className="pt-2 pb-14 bg-luna-beige text-luna-blue">
+        <div className="text-center flex flex-col items-center px-8">
           <h1 className="font-bold text-3xl mt-6 mb-12">CURRENT FUNDRAISING</h1>
-          <div className="leading-none flex flex-col gap-y-4">
+          <div className="leading-none flex flex-col gap-y-4 md:w-1/2">
             <p>
               Period poverty significantly impacts the health, education, and
               dignity of individuals who menstruate, often resulting in missed
@@ -27,10 +27,10 @@ export default function FundraisingPage() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center px-72 pt-7 bg-luna-blue text-luna-beige">
-        <div className="text-center">
-          <h1 className="font-bold text-3xl mt-6 mb-14">PAST EVENTS</h1>
-          <div className="leading-none flex flex-col gap-y-4">
+      <section className="pt-7 bg-luna-blue text-luna-beige">
+        <div className="text-center flex flex-col items-center px-8">
+          <h1 className="font-bold text-3xl mt-6 mb-12">PAST EVENTS</h1>
+          <div className="leading-none flex flex-col gap-y-4 md:w-1/2">
             <p>
               Enactus partner, Sodexo Stop Hunger Foundation, has recognized
               LUNA as a project with tremendous potential. This additional
@@ -54,7 +54,7 @@ export default function FundraisingPage() {
             </p>
           </div>
           <div className="w-fit mx-auto my-10">
-            <Image src={SchrodersTeam} width={400} alt="luna team" />
+            <Image src={SchrodersTeam} className="w-64 md:w-400" alt="luna team" />
           </div>
         </div>
       </section>

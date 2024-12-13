@@ -5,10 +5,10 @@ import ProductZoom from "@/../public/images/product_zoom.jpg";
 export default function ProductPage() {
   return (
     <div className="bg-luna-beige">
-      <div className="flex flex-col items-center px-72 pt-2 pb-20">
-        <main className="text-luna-blue text-center mb-14">
-          <h1 className="font-bold text-3xl mt-6 mb-14">THE PRODUCT</h1>
-          <div className="leading-none flex flex-col gap-y-4">
+      <div className="flex flex-col items-center pt-2 pb-20">
+        <main className="text-luna-blue text-center mb-14 flex flex-col items-center">
+          <h1 className="font-bold text-3xl mt-6 mb-12">THE PRODUCT</h1>
+          <div className="leading-none flex flex-col gap-y-4 w-10/12 md:w-1/2">
             <p>
               By installing menstrual product dispensers in at the sites of
               various organisations, we ensure that individuals have easy access
@@ -29,9 +29,9 @@ export default function ProductPage() {
             </p>
           </div>
         </main>
-        <div className="flex flex-col gap-y-9">
-          <Image src={ProductSide} width={400} alt="luna product" />
-          <Image src={ProductZoom} width={400} alt="luna product" />
+        <div className="flex flex-col gap-y-9 items-center">
+          <Image src={ProductSide} alt="luna product" className="w-3/4 md:w-[400px]"/>
+          <Image src={ProductZoom} alt="luna product" className="w-3/4 md:w-[400px]" />
         </div>
       </div>
     </div>

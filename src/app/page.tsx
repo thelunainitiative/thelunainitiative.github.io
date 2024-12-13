@@ -12,7 +12,7 @@ export default function Home() {
           <Image
             src={WhiteLogo}
             alt="Luna logo white"
-            width={560}
+            className="md:w-[560px] w-72"
           />
         </div>
         <div className="w-fit mt-10 mb-16">
@@ -23,7 +23,7 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div className="mb-10 w-9/12">
+        <div className="mb-12 md:w-3/5">
           <p className="text-luna-beige text-lg px-5 leading-tight text-center">
             Addressing period poverty in the UK is essential for promoting
             health, education, and gender equality. Many people face financial
@@ -33,7 +33,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="bg-luna-beige text-luna-blue grid grid-cols-2 gap-x-9 px-5 py-12 leading-tight">
+      <section className="bg-luna-beige text-luna-blue grid grid-cols-2 gap-x-9 px-8 py-12 leading-tight">
         <div>
           <h3 className="text-2xl font-bold mb-5">I. MISSION</h3>
           <p>

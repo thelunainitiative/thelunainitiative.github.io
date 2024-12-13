@@ -8,7 +8,7 @@ export default function TeamPage() {
         <div className="text-luna-blue text-center mb-14">
           <h1 className="font-bold text-3xl mt-6 mb-5">THE TEAM</h1>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 leading-tight">
           {teamInfo.map(({ name, image, position }) => (
             <TeamCard
               key={name}
