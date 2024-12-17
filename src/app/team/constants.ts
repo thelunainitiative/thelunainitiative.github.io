@@ -8,8 +8,10 @@ import Geneva from "@/../public/images/team/geneva.jpg";
 import Giorgio from "@/../public/images/team/giorgio.jpg";
 import Jia from "@/../public/images/team/jia.jpg";
 import Nirupama from "@/../public/images/team/nirupama.jpg";
+import Godwin from "@/../public/images/team/godwin.jpg";
+import { StaticImageData } from "next/image";
 
-export const teamInfo = [
+export const teamInfo: {name: string, image: StaticImageData, position: string}[] = [
   { name: "EDDIE CHILDS", image: Eddie, position: "Executive Director" },
   {
     name: "ANTHEA GABOT",
@@ -47,5 +49,10 @@ export const teamInfo = [
     name: "ALICE WANG",
     image: Alice,
     position: "Product Sourcing and Fundraising",
+  },
+  {
+    name: "GODWIN EDEGWARE",
+    image: Godwin,
+    position: "Software Developer"
   },
 ];
