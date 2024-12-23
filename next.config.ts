@@ -2,10 +2,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export", // line to make it work with github
+  reactStrictMode: true, // line to enable it work with github
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule: any) =>
-      rule.test?.test?.('.svg')
+      rule.test?.test?.(".svg")
     );
 
     config.module.rules.push(
@@ -19,7 +22,7 @@ const nextConfig: NextConfig = {
       {
         test: /\.svg$/i,
         resourceQuery: { not: /url/ }, // exclude if *.svg?url
-        use: ['@svgr/webpack'],
+        use: ["@svgr/webpack"],
       }
     );
 
@@ -31,10 +34,10 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'fakestoreapi.com',
-        port: '',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "fakestoreapi.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },
